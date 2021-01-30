@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- styles.css link -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--icon links-->
+  <link href = "images/icon-supervisor.svg">
+
+
+  <!--google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+  <!-- bootstrap components requre javaScript functionality to be more effecive -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <main class = "container-fluid"> <!--container fluid spans the whole width of the parent element -->
+    <section class = "intro">
+      <div class ="heading">Reliable, efficient delivery</div>
+      <div class = "producer">Powered by Technology</div>
+
+      <div class ="heading-text">Our Artificial Intelligence powered tools use millions of project data points
+      to ensure that your project is successful</div>
+    </section>
+    <section class = "products container"> <!-- container class centers its children on the scrren -->
+      <!-- from medium screen and above, we want to take up 4units out of 12. if the creen sizes
+      is less than 768px, take 100% of the parent element-->
+      <div class = "row align-items-center justify-content-between">
+        <div class = "col-md-4 first-Item">
+          <div class = "feature">Supervisor</div>
+          <div class = "text-feature">Monitors activity to identify project roadblocks</div>
+          <object type="image/svg+xml" data="images/icon-supervisor.svg"></object>
+        </div>
+        <!-- we have row nested within a col that 2 columns that take 100% of the parent -->
+        <div class = "col-md-4" style = "padding:0;">
+          <div clas = "row">
+            <!-- columns in this row take 100% of the width -->
+            <div class = "col-12 second-Item">
+              <div class = "feature">Team Builder</div>
+              <div class = "text-feature">Scans our talent network to create the optimal team for your project</div>
+              <object type="image/svg+xml" data="images/icon-team-builder.svg"></object>
+            </div>
+            <div class = "col-12 third-Item">
+              <div class = "feature">Karma</div>
+              <div class = "text-feature">Regularly evaluates our talent to ensure quality</div>
+              <object type="image/svg+xml" data="images/icon-Karma.svg"></object>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 item fourth-Item">
+          <div class = "feature">Calculator</div>
+          <div class = "text-feature">Uses data from past projects to provide better delivery estimates</div>
+          <object type="image/svg+xml" data="images/icon-calculator.svg"></object>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.linkedin.com/in/mena-agina-49b210172/">Mena Agina</a>.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
